@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col align-self-center">
+                <div class="text-center">
+                    <h2>@ViewBag.Message</h2>
+                    <form action="/Home/Total" method="post" id="form-soma">
+                        <input id="resultado" type="hidden" class="form-control" name="resultado" />
+                        <div class="form-group">
+                            <label for="inputEmail" class="sr-only">Valor 1</label>
+                            <input id="numero1" type="number" class="form-control" name="numero1" min="0" placeholder="Valor 1" />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="inputEmail" class="sr-only">Valor 2</label>
+                            <input id="numero2" type="number" class="form-control" name="numero2" min="0" placeholder="Valor 2" />
+                        </div>
+                        <br />
+                        <button type="button" id="btn-somar" class="btn btn-primary"> Somar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="~/Content/js/custom.js"></script>
+
+
+</body>
+</html>
